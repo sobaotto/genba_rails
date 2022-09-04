@@ -106,3 +106,291 @@ Migrating to CreateTasks (20220904065749)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3400679014569659550)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/tasks" for ::1 at 2022-09-04 18:58:05 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 23.7ms | Allocations: 26615)
+Started GET "/tasks" for ::1 at 2022-09-04 18:58:08 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 28.5ms | Allocations: 49552)
+  Rendered layout layouts/application.html.slim (Duration: 5911.6ms | Allocations: 326077)
+Completed 200 OK in 5920ms (Views: 5908.6ms | ActiveRecord: 5.4ms | Allocations: 332916)
+
+
+  Rendered layout layouts/application.html.slim (Duration: 3355.1ms | Allocations: 260564)
+Completed 200 OK in 3356ms (Views: 3336.4ms | ActiveRecord: 19.0ms | Allocations: 261547)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 18:58:15 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 18.9ms | Allocations: 7362)
+  Rendered layout layouts/application.html.slim (Duration: 46.7ms | Allocations: 13349)
+Completed 200 OK in 54ms (Views: 47.1ms | ActiveRecord: 0.5ms | Allocations: 16528)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 18:58:16 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.1ms | Allocations: 520)
+  Rendered layout layouts/application.html.slim (Duration: 6.8ms | Allocations: 6363)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.6ms | Allocations: 7217)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 18:58:19 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 5.7ms | Allocations: 1485)
+  Rendered layout layouts/application.html.slim (Duration: 12.6ms | Allocations: 7314)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 7654)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 18:58:20 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.9ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 9.6ms | Allocations: 6333)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 7178)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 18:58:21 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 2.1ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 11.5ms | Allocations: 6376)
+Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 7207)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 18:58:24 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 27.2ms | Allocations: 1471)
+  Rendered layout layouts/application.html.slim (Duration: 35.3ms | Allocations: 7298)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 1.2ms | Allocations: 7637)
+
+
+Started GET "/tasks/1" for ::1 at 2022-09-04 18:58:25 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.4ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 13.8ms | Allocations: 6337)
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 0.5ms | Allocations: 7167)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 18:58:26 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 4.9ms | Allocations: 1471)
+  Rendered layout layouts/application.html.slim (Duration: 16.1ms | Allocations: 7304)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 7643)
+
+
+Started GET "/tasks/2" for ::1 at 2022-09-04 18:58:43 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 0.8ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 5.3ms | Allocations: 6343)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 7173)
+
+
+Started GET "/tasks/2" for ::1 at 2022-09-04 18:58:44 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.2ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 10.1ms | Allocations: 6334)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 7164)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 18:58:48 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 18:59:48 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:00:49 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:00:50 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:01:49 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/tasks/2/edit" for ::1 at 2022-09-04 19:02:41 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:15:in `edit'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (Duration: 12.0ms | Allocations: 9770)
+  Rendered tasks/edit.html.slim within layouts/application (Duration: 15.4ms | Allocations: 12207)
+  Rendered layout layouts/application.html.slim (Duration: 19.5ms | Allocations: 17953)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 18964)
+
+
+Started PATCH "/tasks/2" for ::1 at 2022-09-04 19:02:43 +0900
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"fasd", "description"=>"fasdfasdfafsad"}, "commit"=>"更新する", "id"=>"2"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:26:in `update'
+  [1m[36mTask Update (0.8ms)[0m  [1m[33mUPDATE "tasks" SET "description" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["description", "fasdfasdfafsad"], ["updated_at", "2022-09-04 10:02:43.497406"], ["id", 2]]
+  ↳ app/controllers/tasks_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:26:in `update'
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms | Allocations: 4229)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 19:02:43 +0900
+Processing by TasksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.9ms | Allocations: 1567)
+  Rendered layout layouts/application.html.slim (Duration: 8.4ms | Allocations: 7507)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 7941)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 19:02:47 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.7ms | Allocations: 541)
+  Rendered layout layouts/application.html.slim (Duration: 11.3ms | Allocations: 6372)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 7202)
+
+
+Started GET "/tasks/3" for ::1 at 2022-09-04 19:02:48 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 1.4ms | Allocations: 515)
+  Rendered layout layouts/application.html.slim (Duration: 8.6ms | Allocations: 6334)
+Completed 200 OK in 20ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 7163)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 19:02:50 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 8.4ms | Allocations: 1471)
+  Rendered layout layouts/application.html.slim (Duration: 16.8ms | Allocations: 7313)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 7651)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:02:50 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/tasks/new" for ::1 at 2022-09-04 19:02:52 +0900
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (Duration: 1.9ms | Allocations: 1119)
+  Rendered tasks/new.html.slim within layouts/application (Duration: 6.9ms | Allocations: 3473)
+  Rendered layout layouts/application.html.slim (Duration: 12.1ms | Allocations: 9051)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 9477)
+
+
+Started POST "/tasks" for ::1 at 2022-09-04 19:02:54 +0900
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"fsadf", "description"=>"fasd"}, "commit"=>"登録する"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTask Create (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fsadf"], ["description", "fasd"], ["created_at", "2022-09-04 10:02:54.242753"], ["updated_at", "2022-09-04 10:02:54.242753"]]
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 10ms (ActiveRecord: 1.4ms | Allocations: 2456)
+
+
+Started GET "/tasks" for ::1 at 2022-09-04 19:02:54 +0900
+Processing by TasksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.9ms | Allocations: 1654)
+  Rendered layout layouts/application.html.slim (Duration: 12.0ms | Allocations: 7563)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 7906)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:03:52 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:04:52 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:05:53 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 19:06:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  

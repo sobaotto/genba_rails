@@ -3,13 +3,14 @@ html
   head
     title
       | Taskleaf
-    meta[name="viewport" content="width=device-width,initial-scale=1"]
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag "application", "data-turbo-track": "reload"
-    = javascript_importmap_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    .app-tilte.navbar.navbar-expand-md.navbar-light.bg-light
+    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
       .navbar-brand Taskleaf
     .container
-    = yield
+      - if flash.notice.present?
+        .alert.alert-success= flash.notice
+      = yield
