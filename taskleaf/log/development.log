@@ -1,0 +1,93 @@
+  [1m[35m (135.2ms)[0m  [1m[35mCREATE DATABASE "taskleaf_development" ENCODING = 'unicode'[0m
+  [1m[35m (54.8ms)[0m  [1m[35mCREATE DATABASE "taskleaf_test" ENCODING = 'unicode'[0m
+Started GET "/users/new" for ::1 at 2022-09-04 14:28:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/users/new" for ::1 at 2022-09-04 14:28:40 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/users" for ::1 at 2022-09-04 14:28:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2022-09-04 14:28:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for ::1 at 2022-09-04 14:28:51 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sobao/.rbenv/versions/3.0.4/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sobao/.rbenv/versions/3.0.4/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 419)
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 4565)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:28:57 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:29:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:30:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:32:01 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:33:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:34:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:35:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:36:12 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:37:23 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:38:42 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:38:59 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:39:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:41:00 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:42:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:43:05 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:44:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
+Started GET "/rest/information_messages?client=web" for ::1 at 2022-09-04 14:45:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/rest/information_messages"):
+  
