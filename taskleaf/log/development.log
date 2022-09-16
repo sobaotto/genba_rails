@@ -5048,3 +5048,438 @@ Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 09
   
 ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
   
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:12:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started POST "/login" for ::1 at 2022-09-16 10:12:33 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 309ms (ActiveRecord: 9.1ms | Allocations: 12132)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:12:33 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 15.5ms | Allocations: 22405)
+  Rendered layout layouts/application.html.slim (Duration: 45.6ms | Allocations: 60857)
+Completed 200 OK in 48ms (Views: 42.9ms | ActiveRecord: 3.7ms | Allocations: 62841)
+
+
+Started GET "/login" for ::1 at 2022-09-16 10:13:01 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 4.4ms | Allocations: 5020)
+  Rendered layout layouts/application.html.slim (Duration: 9.0ms | Allocations: 11248)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 12301)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:13:01 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started POST "/login" for ::1 at 2022-09-16 10:13:26 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 333ms (ActiveRecord: 6.3ms | Allocations: 7178)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:13:26 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 7.6ms | Allocations: 3617)
+  Rendered layout layouts/application.html.slim (Duration: 11.7ms | Allocations: 10108)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 3.9ms | Allocations: 11621)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:13:59 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started POST "/login" for ::1 at 2022-09-16 10:15:01 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 299ms (ActiveRecord: 4.5ms | Allocations: 3977)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:15:01 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 5.7ms | Allocations: 3613)
+  Rendered layout layouts/application.html.slim (Duration: 13.9ms | Allocations: 10110)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 2.6ms | Allocations: 11623)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:15:01 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:16:00 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:16:49 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:17:59 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/" for ::1 at 2022-09-16 10:18:01 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 10.4ms | Allocations: 8850)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 28.8ms | Allocations: 28469)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 6.8ms | Allocations: 30530)
+
+
+  
+ActionView::Template::Error (undefined method `admin?' for #<User id: 4, name: "ryota", email: "ryota2@sample.com", password_digest: [FILTERED], created_at: "2022-09-16 00:13:23.805453000 +0000", updated_at: "2022-09-16 00:13:23.805453000 +0000">):
+    14:       ul.navbar-nav.ml-auto
+    15:         - if current_user
+    16:           li.nav-item= link_to 'タスク一覧', tasks_path, class: 'nav-link'
+    17:           - if current_user.admin?
+    18:             li.nav-item= link_to 'ユーザー一覧', admin_users_path, class: 'nav-link'
+    19:           li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link'
+    20:         - else
+  
+app/views/layouts/application.html.slim:17
+Started GET "/" for ::1 at 2022-09-16 10:18:28 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 8.6ms | Allocations: 7391)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 20.2ms | Allocations: 20449)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 1.6ms | Allocations: 21631)
+
+
+Started GET "/tasks" for ::1 at 2022-09-16 10:18:30 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.5ms | Allocations: 2025)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 9.3ms | Allocations: 8769)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.8ms | Allocations: 9127)
+
+
+Started GET "/logout" for ::1 at 2022-09-16 10:18:31 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:18:59 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:19:58 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:20:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:20:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/tasks" for ::1 at 2022-09-16 10:20:26 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 14.0ms | Allocations: 8850)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 32.9ms | Allocations: 24857)
+Completed 200 OK in 37ms (Views: 28.3ms | ActiveRecord: 6.4ms | Allocations: 26944)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:20:56 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:21:52 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:22:19 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:22:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:22:40 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:22:47 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/tasks" for ::1 at 2022-09-16 10:23:14 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 19.6ms | Allocations: 24774)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 71.2ms | Allocations: 71245)
+Completed 200 OK in 79ms (Views: 59.3ms | ActiveRecord: 14.2ms | Allocations: 78257)
+
+
+Started GET "/logout" for ::1 at 2022-09-16 10:23:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:23:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:23:57 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:24:02 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/tasks" for ::1 at 2022-09-16 10:24:10 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 24.7ms | Allocations: 24481)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 110.7ms | Allocations: 71302)
+Completed 200 OK in 118ms (Views: 61.8ms | ActiveRecord: 50.2ms | Allocations: 76250)
+
+
+Started GET "/tasks" for ::1 at 2022-09-16 10:24:11 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 5.5ms | Allocations: 2112)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 14.6ms | Allocations: 9019)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 1.2ms | Allocations: 9402)
+
+
+Started GET "/logout" for ::1 at 2022-09-16 10:24:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:24:48 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/logout" for ::1 at 2022-09-16 10:26:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:26:06 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:26:57 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:28:01 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:28:59 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:30:00 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:31:00 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:31:52 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started GET "/tasks" for ::1 at 2022-09-16 10:32:26 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 31.0ms | Allocations: 12017)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 48.4ms | Allocations: 28415)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 19.4ms | Allocations: 30546)
+
+
+Started DELETE "/logout" for ::1 at 2022-09-16 10:32:28 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 690)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:32:28 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 5.0ms | Allocations: 2192)
+  Rendered layout layouts/application.html.slim (Duration: 11.0ms | Allocations: 8478)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.6ms | Allocations: 8868)
+
+
+Started GET "/login" for ::1 at 2022-09-16 10:32:30 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 43.9ms | Allocations: 4998)
+  Rendered layout layouts/application.html.slim (Duration: 59.1ms | Allocations: 11279)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms | Allocations: 12269)
+
+
+Started POST "/login" for ::1 at 2022-09-16 10:32:46 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 306ms (ActiveRecord: 0.6ms | Allocations: 1361)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:32:46 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.7ms | Allocations: 2092)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 8.0ms | Allocations: 9030)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.6ms | Allocations: 9400)
+
+
+Started DELETE "/logout" for ::1 at 2022-09-16 10:32:49 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 436)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:32:49 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 3.3ms | Allocations: 2027)
+  Rendered layout layouts/application.html.slim (Duration: 10.0ms | Allocations: 8185)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 8526)
+
+
+Started GET "/login" for ::1 at 2022-09-16 10:32:50 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 5.8ms | Allocations: 726)
+  Rendered layout layouts/application.html.slim (Duration: 14.0ms | Allocations: 6694)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+Started POST "/login" for ::1 at 2022-09-16 10:32:54 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 301ms (ActiveRecord: 0.2ms | Allocations: 1005)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:32:54 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.8ms | Allocations: 2018)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 8.7ms | Allocations: 8956)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.5ms | Allocations: 9293)
+
+
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:33:03 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started DELETE "/logout" for ::1 at 2022-09-16 10:33:04 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 435)
+
+
+Started GET "/" for ::1 at 2022-09-16 10:33:04 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 3.7ms | Allocations: 2023)
+  Rendered layout layouts/application.html.slim (Duration: 10.0ms | Allocations: 8294)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 8632)
+
+

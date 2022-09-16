@@ -13,6 +13,13 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    puts 'そばお'
+    # セッションの中の値はどうやって確認するのかな？
+    reset_session
+    redirect_to root_url, notice: 'ログアウトしました。'
+  end
+
   private
 
   def session_params
