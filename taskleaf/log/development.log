@@ -5483,3 +5483,553 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 8632)
 
 
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:33:56 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:35:02 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:35:47 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:37:00 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:37:53 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:38:57 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:39:47 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:40:48 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:41:57 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/rest/information_messages?client=web" for ::1 at 2022-09-16 10:42:50 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/rest/information_messages"):
+  
+Started OPTIONS "/auth/validate_token" for ::1 at 2022-09-16 10:42:53 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/auth/validate_token"):
+  
+Started OPTIONS "/auth/validate_token" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/auth/validate_token"):
+  
+Started OPTIONS "/auth/validate_token" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/auth/validate_token"):
+  
+Started OPTIONS "/domains/all_settings?version=1-2022-09-06T13%3A02%3A30%2B09%3A00-0-e3701235f1a0ab7ecb9eac6b0f5c4bc6" for ::1 at 2022-09-16 10:42:55 +0900
+Started OPTIONS "/user_groups/all?version=-0-2022-09-15T01%3A19%3A23%2B00%3A00-1-a3556a026af1bbebb6e6d015082e396e" for ::1 at 2022-09-16 10:42:55 +0900
+Started OPTIONS "/users/all?version=1-1663204763-1-657aa4ce8b061fe15502b3cb095874c5" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/domains/all_settings"):
+  
+Started OPTIONS "/multiple_lists" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/user_groups/all"):
+  
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/users/all"):
+  
+Started OPTIONS "/bcc_mail_settings" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/multiple_lists"):
+  
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/bcc_mail_settings"):
+  
+Started OPTIONS "/domains/all_settings?version=1-2022-09-06T13%3A02%3A30%2B09%3A00-0-e3701235f1a0ab7ecb9eac6b0f5c4bc6" for ::1 at 2022-09-16 10:42:55 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/domains/all_settings"):
+  
+Started OPTIONS "/auth/validate_token" for ::1 at 2022-09-16 10:42:58 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/auth/validate_token"):
+  
+Started OPTIONS "/auth/sign_in" for ::1 at 2022-09-16 10:43:33 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/auth/sign_in"):
+  
+Started GET "/" for ::1 at 2022-09-16 10:44:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 25.8ms | Allocations: 24773)
+  Rendered layout layouts/application.html.slim (Duration: 76.2ms | Allocations: 64198)
+Completed 200 OK in 86ms (Views: 69.7ms | ActiveRecord: 9.4ms | Allocations: 71214)
+
+
+Started GET "/login" for ::1 at 2022-09-17 13:37:51 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 9.5ms | Allocations: 5271)
+  Rendered layout layouts/application.html.slim (Duration: 15.6ms | Allocations: 11562)
+Completed 200 OK in 20ms (Views: 17.9ms | Allocations: 12604)
+
+
+Started POST "/login" for ::1 at 2022-09-17 13:38:09 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3001/
+Completed 302 Found in 339ms (ActiveRecord: 15.6ms | Allocations: 10259)
+
+
+Started GET "/" for ::1 at 2022-09-17 13:38:09 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 2.3ms | Allocations: 2165)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 24.3ms | Allocations: 9996)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 10382)
+
+
+Started DELETE "/logout" for ::1 at 2022-09-17 13:38:13 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3001/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 459)
+
+
+Started GET "/" for ::1 at 2022-09-17 13:38:13 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 3.4ms | Allocations: 2021)
+  Rendered layout layouts/application.html.slim (Duration: 9.2ms | Allocations: 8206)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 8544)
+
+
+Started GET "/login" for ::1 at 2022-09-17 13:38:14 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 2.9ms | Allocations: 736)
+  Rendered layout layouts/application.html.slim (Duration: 8.7ms | Allocations: 6707)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 7038)
+
+
+Started POST "/login" for ::1 at 2022-09-17 13:38:16 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ryota2@sample.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryota2@sample.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3001/
+Completed 302 Found in 273ms (ActiveRecord: 0.8ms | Allocations: 1026)
+
+
+Started GET "/" for ::1 at 2022-09-17 13:38:16 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (Duration: 1.8ms | Allocations: 2018)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.slim (Duration: 6.5ms | Allocations: 8937)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 9275)
+
+
+Started GET "/tasks/1" for ::1 at 2022-09-17 14:08:45 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.slim
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 7.3ms | Allocations: 7355)
+  Rendered layout layouts/application.html.slim (Duration: 12.1ms | Allocations: 13778)
+Completed 200 OK in 39ms (Views: 13.1ms | ActiveRecord: 8.6ms | Allocations: 24392)
+
+
+Started DELETE "/logout" for ::1 at 2022-09-17 14:08:47 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3001/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 628)
+
+
+Started GET "/" for ::1 at 2022-09-17 14:08:47 +0900
+Processing by TasksController#index as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 394)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:08:47 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 1.8ms | Allocations: 1357)
+  Rendered layout layouts/application.html.slim (Duration: 18.7ms | Allocations: 7608)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 8476)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:08:51 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 1.6ms | Allocations: 718)
+  Rendered layout layouts/application.html.slim (Duration: 8.1ms | Allocations: 6703)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 7044)
+
+
+Started GET "/tasks/1" for ::1 at 2022-09-17 14:08:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 394)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:08:57 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 1.2ms | Allocations: 728)
+  Rendered layout layouts/application.html.slim (Duration: 9.7ms | Allocations: 6696)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 7020)
+
+
+Started GET "/tasks/1" for ::1 at 2022-09-17 14:09:03 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:03 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.slim
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (Duration: 1.9ms | Allocations: 722)
+  Rendered layout layouts/application.html.slim (Duration: 11.3ms | Allocations: 6690)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 7014)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 564)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 365)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 365)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:13 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 401)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 395)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/login" for ::1 at 2022-09-17 14:09:14 +0900
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3001/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 401)
+
+
